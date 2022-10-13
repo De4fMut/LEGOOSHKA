@@ -1,0 +1,91 @@
+@import "../../ФИШКИ/nullstyle";
+*{
+    font-size: 1.8rem;
+}
+body {
+    background-image: url("../img/bricks_white.svg");
+    background-repeat: repeat;
+    background-size: 75%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    flex: 0 0 10%;
+    background-color: #72727296;
+    margin-bottom: 15px;
+    position: relative;
+    h1{
+        font-size: 3rem;
+    }
+}
+main{
+    flex: 1 0 80%;
+}
+.menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.list{
+    flex: 1 1 49%;
+    width: 95vw;
+    background-color: rgba(165, 42, 42, 0.8);
+    //text-align: center;
+    padding: 2.5%;
+    &:first-child{
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+        margin-bottom: 2.5%;
+    }
+    &:last-child{
+        border-bottom-left-radius: 45px;
+        border-bottom-right-radius: 45px;
+    }
+}
+ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vw;
+    align-items: center;
+    height: 8vh;
+    margin-bottom: 2vh;
+    width: 100%;
+    position: relative;
+    background-color: rgba(203, 156, 68,0.6);
+    p{
+        flex: 0 0 120px;
+    }
+    .function{
+        flex: 0 0 154px;
+       // display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        button{
+            background-color: #fff;
+            border-radius: 50%;
+            height: 45px;
+            width: 45px;
+            outline: red solid 2px;
+        }
+        input{
+            width: 50px;
+            text-align: center;
+            border-radius: 6px;
+        }
+    }
+}
+footer{
+    flex: 0 0 10%;
+}
